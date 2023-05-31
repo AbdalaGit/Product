@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>نظام إدارة المنتجات</title>
+    <link rel="stylesheet" href="style .css">
+    <link rel="icon" href="mann.webp">
+</head>
+
+<body class="body">
+
+    <div class="main">
+
+        <div class="head-title">
+            <h1>نظام إدارة المنتجات</h1>
+            <p>اتمني ان تعجبك خدمتنا</p>
+        </div>
+
+        <div class="inputs">
+            <input type="text" id="title" placeholder="الاسم">
+
+            <div class="price">
+                <input onkeyup="getTotal()" type="number" id="price" placeholder="السعر">
+                <input onkeyup="getTotal()" type="number" id="taxes" placeholder="الضرايب">
+                <input onkeyup="getTotal()" type="number" id="ads" placeholder="الاعلانات">
+                <input onkeyup="getTotal()" type="number" id="discount" placeholder="خصم">
+                <small id="total"></small>
+            </div>
+
+            <input type="number" id="count" placeholder="العدد">
+            <input type="text" id="category" placeholder="النوع">
+            <button id="submit">انشاء</button>
+
+        </div>
+
+        <div class="outputs">
+
+            <div class="SearchBlock">
+                <input onkeyup="searchData(this.value)" type="text" id="search" placeholder="بحث">
+                <div class="BtnSearch">
+                    <button onclick="getSearchMood(this.id)" id="SearchTitle">البحث حسب الاسم</button>
+                    <button onclick="getSearchMood(this.id)" id="SearchCategory">البحث حسب النوع</button>
+                </div>
+            </div>
+            
+            <div id="DaleteAll">
+
+            </div>
+
+            <table>
+                <tr>
+                    <th>رقم العملية</th>
+                    <th>الاسم</th>
+                    <th>السعر</th>
+                    <th>الضرايب</th>
+                    <th>الاعلانات</th>
+                    <th>خصم</th>
+                    <th>المجموع</th>
+                    <th>النوع</th>
+                    <th>تحديث</th>
+                    <th>حذف</th>
+                </tr>
+
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
